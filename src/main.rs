@@ -1,12 +1,11 @@
-mod io;
-mod server;
+mod chakra;
 
-use crate::io::IO;
-use crate::io::channel::Channel;
-use crate::io::channel::stdio::STDIOChannel;
-use crate::io::encoding::Encoding;
-use crate::io::encoding::jsonrpc::JSONRPCEncoding;
-use crate::server::Server;
+use crate::chakra::io::IO;
+use crate::chakra::io::channel::Channel;
+use crate::chakra::io::channel::stdio::STDIOChannel;
+use crate::chakra::io::encoding::Encoding;
+use crate::chakra::io::encoding::jsonrpc::JSONRPCEncoding;
+use crate::chakra::server::Server;
 use std::env::{args, Args};
 use std::env::{vars, Vars};
 use std::io::Result;
@@ -31,4 +30,3 @@ fn main() -> Result<()> {
 
     Ok(())
 }
-
