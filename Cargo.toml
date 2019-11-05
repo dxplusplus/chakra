@@ -5,3 +5,4 @@ authors = ["James Thomason, Jr"]
 edition = "2018"
 
 [dependencies]
+tokio = "0.1.x"

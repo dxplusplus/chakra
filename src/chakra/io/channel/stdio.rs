@@ -1,7 +1,9 @@
+extern crate tokio;
+
 pub struct STDIOChannel;
 
-use std::io::stdout;
-use std::io::Write;
+use tokio::io::stdout;
+use tokio::io::Write;
 
 impl STDIOChannel {
     pub fn write(&self, content: String) {
